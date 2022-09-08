@@ -1,0 +1,233 @@
+meta(charset="UTF-8")
+meta(http-equiv="X-UA-Compatible", content="IE=edge")
+meta(name="viewport", content="width=device-width,initial-scale=1")
+title My Awesome Portfolio
+link(href="https://fonts.googleapis.com/css2?family=Lato:wght@100&display=swap", rel="stylesheet")
+link(href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap", rel="stylesheet")
+link(rel="stylesheet", href=" ../static/style.css")
+script(src="https://kit.fontawesome.com/652a660cbd.js", crossorigin="anonymous")
+.site_main_wraper
+  .mob_nav
+    button.ham2
+      i.fa-solid.fa-xmark
+    ul.nav_menu
+      li.nav_item
+        i.fa-solid.fa-house
+        |  
+        a.nav_link(href="#home") Home
+      li.nav_item
+        i.fa-solid.fa-address-card
+        a.nav_link(href="#intro") About
+      li.nav_item
+        i.fa-solid.fa-book-open
+        a.nav_link(href="#skills") Skills
+      li.nav_item
+        i.fa-solid.fa-user-graduate
+        a.nav_link(href="#education") Education
+  header#home
+    .container
+      nav.flex.center_item.just_space
+        .hamburger
+          span.bar
+          span.bar
+          span.bar
+        .logo
+          a.logo_link(href="#")
+            span SA
+            | PNA
+        .left.flex.center_item
+          #links
+            a(href="#home") Home
+            a(href="#intro") About
+            a(href="#skills") Skills
+            a(href="#education") Education
+        .right#right_button
+          a(href="#contact")
+            button.btn.btn_pri Contact
+      .about.flex.center_item
+        .left.flex1.just_center
+          h1
+            | Hi, I'm
+
+            span Sapna
+          h6
+            span Web
+            |  Designer
+          p I am a web designer and my expertise to design Web User Interface and very passionate and dedicated to my work.
+          div
+            a(href="/static/RESUME_sapna.pdf", download)
+              button.btn.btn_sec RESUME
+        .right.flex1.flex.just_center
+          svg.blob(viewBox="0 0 479 467", xmlns="http://www.w3.org/2000/svg", xlink="http://www.w3.org/1999/xlink")
+            mask#mask0(mask-type="alpha")
+              path(d="M9.19024 145.964C34.0253 76.5814 114.865 54.7299 184.111 29.4823C245.804 6.98884 311.86 -14.9503 370.735 14.143C431.207 44.026 467.948 107.508 477.191 174.311C485.897 237.229 454.931 294.377 416.506 344.954C373.74 401.245 326.068 462.801 255.442 466.189C179.416 469.835 111.552 422.137 65.1576 361.805C17.4835 299.81 -17.1617 219.583 9.19024 145.964Z")
+            g(mask="url(#mask0)")
+              path(d="M9.19024 145.964C34.0253 76.5814 114.865 54.7299 184.111 29.4823C245.804 6.98884 311.86 -14.9503 370.735 14.143C431.207 44.026 467.948 107.508 477.191 174.311C485.897 237.229 454.931 294.377 416.506 344.954C373.74 401.245 326.068 462.801 255.442 466.189C179.416 469.835 111.552 422.137 65.1576 361.805C17.4835 299.81 -17.1617 219.583 9.19024 145.964Z")
+              image.blob_img(x="50", y="60", href="/static/profile1.png")
+  section#intro.intro
+    .container.flex.center_item
+      .flex1.pic
+        img.meabout(src="/static/m3.png", alt)
+      .flex1
+        h1
+          span About 
+          | Me
+        h3
+          | Hello! I'M 
+          span SAPNA SINGH
+        p.
+          I am 21 years old from Uttar Pradesh,India and currently pursuing Bacholer Of Technology From APJ Abdul Kalam Technical University,Lucknow. I am very passionate about web development and love to design web user interface. I am currently a fresher and still learning and exploring things.
+          
+        .social
+          a(href="https://www.linkedin.com/in/sapna-singh-86a179220/", target="_blank")
+            i.fa-brands.fa-linkedin-in
+          a(href="https://www.hackerrank.com/singhangel0909s1", target="_blank")
+            i.fa-brands.fa-hackerrank
+          a(href="https://github.com/sapna1010", target="_blank")
+            i.fa-brands.fa-github
+          a(href="https://twitter.com/Sapna0909sapna", target="_blank")
+            i.fa-brands.fa-twitter
+          a(href="https://www.instagram.com/sapna91100/", target="_blank")
+            i.fa-brands.fa-instagram
+  section#skills.skills
+    .container
+      h1.sec_head
+        span S
+        | KILLS
+      p My technical level
+      .cards
+        .first_card
+          img(src="/static/html.png", alt="html")
+          h4 HTML5
+          p HTML5 is a markup language used for structuring and presenting content on the World Wide Web. It is the fifth and final major HTML version that is a World Wide Web Consortium (W3C) recommendation.
+        .first_card
+          img(src="/static/css.png", alt="CSS")
+          h4 CSS3
+          p Cascading Style Sheets Level 3 (CSS3) is the iteration of the CSS standard used in the styling and formatting of Web pages. CSS3 incorporates the CSS2 standard with some changes and improvements.
+        .first_card
+          img(src="/static/js.png", alt="JS")
+          h4 JavaScript
+          p JavaScript is a programming language that is one of the core technologies of the World Wide Web,alongside HTML and CSS. As of 2022, 98% of websites use JavaScript on the client side for webpage behavior.
+        .first_card
+          img(src="/static/node.png", alt="Node.js")
+          h4 Node.JS
+          p Node.js is an open-source, cross-platform, back-end JavaScript runtime environment that runs on a JavaScript Engine and executes JavaScript code outside a web browser, which was designed to build scalable network applications
+        .first_card
+          img(src="/static/mysql.png", alt="MySQL")
+          h4 MySQL
+          p MySQL is the world's most popular open source database. With its proven performance, reliability and ease-of-use, MySQL has become the leading database choice for web-based applications, used by high profile web properties .
+        .first_card
+          img(src="/static/cpp.png", alt="C++")
+          h4 C++
+          p C++ is a general-purpose programming language created by Danish computer scientist Bjarne Stroustrup as an extension of the C programming language, or "C with Classes".
+        .first_card
+          img(src="/static/py.png", alt="python")
+          h4 Python
+          p Python is a high-level, interpreted, general-purpose programming language. Its design philosophy emphasizes code readability with the use of significant indentation.
+  section.education#education
+    h1.sec_head
+      | My
+
+      span Education
+    p This is my basic Education from High School to Graduation
+    .container.just_space.center_item
+      .box
+        i.fas.fa-graduation-cap
+        span 2019-2023
+        h3 Bacholer of Technology
+        p APJ Abdul Kalam Technical University
+        p CSE |August 2023 | Lucknow,U.P
+        p Percentage:74.5%(till 6th sem)
+      .box
+        i.fas.fa-graduation-cap
+        span 2018-2019
+        h3 Intermediate
+        p ISHWARI HIGH SCHOOL CUM INTER COLLEGE
+        p Mathematics| April 2019 | CHAPRA,Bihar
+        p Percentage: 77.2%
+      .box
+        i.fas.fa-graduation-cap
+        span 2016-2017
+        h3 High School
+        p J.M. HIGH SCHOOL CUM INTER COLLEGE
+        p Science| April 2017 | CHAPRA,Bihar
+        p Percentage: 74.2%
+  //  CONTACT SECTION 
+  section#contact.contact
+    .container
+      h1.sec_head
+        | Contact
+
+        span Me
+      p Get in Touch
+      .cards
+        .first_card
+          i.fa-solid.fa-mobile-screen-button
+          h1 Call On
+          h6 8887584595
+        .first_card
+          i.fa-regular.fa-envelope
+          h1 Mail On
+          h6 sapnaasingh0909@gmail.com
+        .first_card
+          i.fa-solid.fa-location-dot
+          h1 Address
+          h6 Uttar Pradesh,India
+      form(action='/contact' method="post" class="inputs")
+        .input1
+          input.form_control#full_name(type="text", placeholder="Your Name *", name="name")
+          input.from_control#email(type="email", placeholder="Your Email *", name="email")
+        .input2
+          input.form_control#subject(type="text", placeholder="Your Subject *", name="subjects")
+          textarea.form_control#Message(name="messages", cols="30", rows="10", placeholder="Your Message...")
+        #btn
+          input.btn.btn_pri.btn2.bt(type="submit", value="SEND MESSAGE", name="submit")
+  footer
+    a.logo_link(href="#")
+      span SA
+      | PNA
+    .footer_social
+      a(href="https://www.linkedin.com/in/sapna-singh-86a179220/", target="_blank")
+        i.fa-brands.fa-linkedin-in
+      a(href="https://www.hackerrank.com/singhangel0909s1", target="_blank")
+        i.fa-brands.fa-hackerrank
+      a(href="https://github.com/sapna1010", target="_blank")
+        i.fa-brands.fa-github
+      a(href="https://twitter.com/Sapna0909sapna", target="_blank")
+        i.fa-brands.fa-twitter
+      a(href="https://www.instagram.com/sapna91100/", target="_blank")
+        i.fa-brands.fa-instagram
+    .copy.
+      
+      Copyright 2022 FLY. All right Reserved.
+      
+script(type="text/javascript", src="//code.jquery.com/jquery-1.11.0.min.js")
+script(type="text/javascript", src="//code.jquery.com/jquery-migrate-1.2.1.min.js")
+script(type="text/javascript", src="slick/slick.min.js")
+script(src="/app.js")
+script.
+  
+  $(document).ready(function(){
+   
+   let hamburger = document.querySelector('.hamburger');
+   let ham2 = document.querySelector('.ham2');
+   let mob_nav = document.querySelector('.mob_nav');
+   let nav_link = document.querySelectorAll('.nav_link');
+  
+  
+   hamburger.addEventListener('click',function(){
+       mob_nav.classList.add('open');
+  
+   });
+  
+   ham2.addEventListener('click',function(){
+       mob_nav.classList.remove('open');
+  
+   });
+   nav_link.forEach( n => n.addEventListener('click',function(){
+       mob_nav.classList.remove('open');
+  
+   }));
+  });
+
+

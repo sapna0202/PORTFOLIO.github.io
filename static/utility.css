@@ -1,0 +1,44 @@
+.flex{
+    display: flex;
+}
+.center_item{
+    align-items: center;
+}
+.just_space{
+    justify-content: space-between;
+}
+.btn{
+    border: 3px solid transparent;
+    border-radius: 4px;
+    outline: none;
+    padding: 0.7rem 2.2rem;
+    font-weight:bolder;
+    text-transform: uppercase;
+    cursor: pointer;
+    transition: all .3s ease;
+}
+
+.btn_pri{
+    color: black;
+    background-color:var(--site_color); 
+}
+.btn_pri:hover{
+    border: 3px solid var(--site_color);
+    background-color: transparent;
+    color: var(--site_color);;
+}
+.btn_sec{
+    border: 3px solid var(--site_color);
+    background-color: transparent;
+    color: var(--site_color);;
+}
+.btn_sec:hover{
+    background-color: var(--site_color);
+    color: black;
+}
+.flex1{
+    flex:1;
+}
+.just_center{
+    justify-content: center;
+}
